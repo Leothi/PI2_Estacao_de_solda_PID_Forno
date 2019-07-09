@@ -210,10 +210,10 @@ function getData() {
       cell2.innerHTML = ADCValue;
       
     }
-//    if(parseInt(ADCValue) > 50) {
-//      console.log("teste");
-//      $("#dialog" ).show();
-//    }
+    if(parseInt(ADCValue) > 238) {
+      console.log("teste");
+      $("#dialog" ).show();
+    }
   };
   xhttp.open("GET", "readADC", true); //Handle readADC server on ESP8266
   xhttp.send();
